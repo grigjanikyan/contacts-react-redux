@@ -1,0 +1,42 @@
+.loading {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%);
+
+    svg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 200px;
+        margin: auto;
+    }
+
+    #center,
+    #ring1,
+    #ring2,
+    #ring3 {
+        fill: $white;
+        transform-origin: 100px 100px;
+    }
+
+    #ring1 {
+        animation: rotation1 2s infinite linear;
+    }
+    #ring2 {
+        animation: rotation1 3s infinite linear;
+    }
+    #ring3 {
+        animation: rotation1 4s infinite linear;
+    }
+
+    @keyframes rotation1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}

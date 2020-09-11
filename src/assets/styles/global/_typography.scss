@@ -1,0 +1,102 @@
+//!Screen Sizes
+$LaptopSizeL: 1500px;
+$TabletSize: 1200px;
+$TabletSizeS: 900px;
+$MobileSize: 700px;
+$MobileSizeS: 480px;
+
+//!Variables
+    $green:#46745B;
+    $blue:#1C2837;
+    $white:#fff;
+    $black:#000;
+    $yellow:#C4AD4E;
+//!
+
+//! Globals
+
+*:not(input):not(select):not(textarea) {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: black;
+    overflow-x: hidden;
+    background-color: white;
+    position: relative;
+    font-family: Fenix;
+
+    div.page {
+        min-height: 100vh;
+    }
+}
+
+h1,h2,h3,h4,h5,h6,p,pre {
+    margin:0;
+}
+
+ul,
+fieldset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+//Transition Times
+$trTime: 0.3s;
+$trTime2: 0.5s;
+
+//Text capitalize
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
+
+}
+
+//Colors
+
+.green {
+    color:$green;
+}
+
+.blue {
+    color:$blue;
+}
+
+.black {
+    color:$black;
+}
+
+.white {
+    color:$white;
+}
+
+.yellow {
+    color:$yellow ;
+}
+
+//Fonts
+
+.font-fenix {
+    font-family: Fenix;
+}

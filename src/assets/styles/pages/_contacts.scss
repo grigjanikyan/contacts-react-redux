@@ -1,0 +1,192 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 64px;
+    width: 100%;
+
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 32px;
+
+        .page-title {
+            font-size: 32px;
+        }
+
+        .buttons {
+            display: flex;
+
+            .ant-btn {
+                margin-left: 10px;
+                background-color: $green;
+                color: $white;
+                border: none;
+
+                &:hover,&:focus {
+                    color: $white;
+                    background-color: $yellow;
+                }
+                
+                &.active {
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+
+    .main-page {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 32px;
+
+        .ant-form {
+            width: 100%;
+            display: flex;
+            
+            .ant-row {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: 0 !important;
+
+                .ant-col {
+                    &:first-child {
+                        padding-left: 0 !important;
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+
+                    &:last-child {
+                        padding-right: 0 !important;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+
+        .ant-row {
+            .ant-col {
+                margin-bottom: 32px;
+
+                .ant-card  {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    .ant-card-body {
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            
+                            .name {
+                                flex: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .ant-table-wrapper {
+            table {
+                .ant-table-tbody {
+                    .ant-table-cell {
+                        div {
+                            display: flex;
+                            align-items: center;
+
+                            .anticon {
+                                cursor: pointer;
+                                color: $green;
+                                font-size: 20px;
+                            }
+
+                            h3 {
+                                margin-left: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ant-pagination {
+        margin: 32px 0;
+    }
+}
+
+@media screen and (max-width:$TabletSizeS){ 
+    .contacts {
+        .main-page {
+            margin-top: 24px;
+    
+            .ant-form {
+                .ant-row {
+    
+                    .ant-col {
+                        &:first-child {
+                            padding: 0 !important;
+                        }
+                        
+                        &:nth-child(2) {
+                            padding-left: 0 !important;
+                        }
+
+                        &:nth-child(3) {
+                            padding-right: 0 !important;
+                        }
+
+                        &:nth-child(4) {
+                            padding-left: 0 !important;
+                        }
+
+                        &:last-child {
+                            padding-right: 0 !important;
+                        }
+                    }
+                }
+            }
+    
+            .ant-row {
+                .ant-col {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $MobileSize) and (orientation: landscape),(max-width: $MobileSizeS){
+    .contacts {
+        padding: 0 32px;
+
+        .main-page {
+            .ant-form {
+                .ant-row {
+    
+                    .ant-col {
+                        
+                        &:nth-child(2) {
+                            padding: 0 !important;
+                        }
+
+                        &:nth-child(3) {
+                            padding: 0 !important;
+                        }
+                    }
+                }
+            }
+    
+            .ant-row {
+                .ant-col {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}

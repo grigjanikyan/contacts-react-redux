@@ -1,0 +1,37 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: $blue;
+    align-items: center;
+    height: unset;
+    padding: 24px 64px;
+   
+    z-index: 1;
+    
+    &.ftr-home {
+        background-color: transparent;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .all-rights {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:$TabletSize){
+    .footer {
+        
+        .all-rights {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: $MobileSize) and (orientation: landscape),(max-width: $MobileSizeS){
+    .footer {
+        padding: 16px 32px;
+    }
+}

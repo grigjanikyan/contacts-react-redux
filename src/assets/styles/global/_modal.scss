@@ -1,0 +1,24 @@
+.ant-modal {
+
+    .ant-form {
+        .ant-row {
+            margin-bottom:40px;
+
+            .ant-form-item-explain {
+                position: absolute;
+                top: calc(100% + 5px);
+                left: 0;
+            }
+        }
+    }
+
+    .ant-btn {
+        background-color: $blue;
+        border: none;
+        transition:$trTime ease-out;
+        
+        &:hover {
+            background-color: $yellow;
+        }
+    }
+}
