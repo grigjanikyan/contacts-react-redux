@@ -1,9 +1,7 @@
 import React from 'react';
-//components
 import Page from '../../components/Page'
 
-const Home = () => {
-    return (
+const Home = () => (
         <Page className='home'>
             <div className='solar-syst'>
                 <div className='sun'></div>
@@ -18,6 +16,5 @@ const Home = () => {
             </div>
         </Page>
     )
-}
 
 export default Home;

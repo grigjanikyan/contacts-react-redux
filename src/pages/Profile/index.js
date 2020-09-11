@@ -1,13 +1,10 @@
 import React from 'react';
-import {CopyOutlined} from "@ant-design/icons";
+import { CopyOutlined } from "@ant-design/icons";
 import withAccountContext from "../../context/consumers/AccountConsumer";
-//components
+
 import Page from '../../components/Page'
 
 const Profile = ({user}) => {
-
-    console.log(user);
-
     return (
         <Page className='profile'>
             <h1 className='page-title'>Profile</h1>

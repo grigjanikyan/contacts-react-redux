@@ -1,8 +1,7 @@
 import React from 'react';
+import { List, Card, Row, Col } from 'antd';
 
-import {List,Card,Row,Col} from 'antd';
-
-const Tiled = ({list})=>{
+const Tiled = ({ list })=>{
     return(
         <Row gutter={20}>
             {list?.map((i,k)=>(

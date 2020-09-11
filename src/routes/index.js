@@ -1,8 +1,8 @@
 import React from 'react';
-import {Route, Switch, withRouter} from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import PrivateRoute from "./PrivateRoute";
 
-import {Home, Profile, Contacts} from '../pages';
+import { Home, Profile, Contacts } from '../pages';
 
 const Routes = () => {
     return (
