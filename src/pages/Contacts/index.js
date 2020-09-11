@@ -15,7 +15,7 @@ const Contacts = ({getData, data, loading, pagination, onPagination,onFilter}) =
 
     useEffect(() => {
         getData();
-    }, [])
+    }, [window.innerWidth])
 
 
     return (

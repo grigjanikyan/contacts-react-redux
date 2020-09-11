@@ -36,7 +36,7 @@ const AppHeader = ({isLoggedIn}) => {
 
     return (
         <Header className={`header ${window.location.pathname === '/' ? 'hdr-home' : ''}`}>
-            <SocIcon></SocIcon>
+            <Link to='/' ><SocIcon></SocIcon></Link>
             {isLoggedIn ?
                 <div className='menu'>
                     <Link to='/profile' >Profile</Link>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Moment from 'react-moment';
 import {Table} from 'antd';
 import {CopyOutlined} from "@ant-design/icons";
 
@@ -27,7 +28,9 @@ const Tiled = ({list, pagination, onPagination}) => {
             dataIndex: ['dob', 'date'],
             width: 150,
             render: (text, record) => (
-                <h3>{record.dob.date}</h3>
+                <Moment format="YYYY/MM/DD">
+                    <h3>{record.dob.date}</h3>
+                </Moment>
             )
         },
         {

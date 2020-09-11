@@ -6,7 +6,11 @@
     height: unset;
     padding: 16px 64px;
     z-index: 2;
-    
+
+    & > a:first-child {
+        display: flex;
+    }
+
     .menu {
         display: flex;
         color: $white;
@@ -86,5 +90,28 @@
 @media only screen and (max-width: $MobileSize) and (orientation: landscape),(max-width: $MobileSizeS){
     .header {
         padding: 16px 32px;
+
+        .menu {
+            margin-left: 16px;
+    
+            a {
+                margin-right: 12px;
+                font-size: 14px;
+            }
+        }
+
+        .ant-menu {
+            .ant-menu-submenu {
+                margin: 0;
+                
+                .ant-menu-submenu-title {
+                    font-size: 0;
+    
+                    .ant-avatar {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
     }
 }
